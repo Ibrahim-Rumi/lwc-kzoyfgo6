@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/ibrahim-rumi.lwc-kzoyfgo6",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 67d5mGmLDCbHV12uNGiu --open"
+  }
+}

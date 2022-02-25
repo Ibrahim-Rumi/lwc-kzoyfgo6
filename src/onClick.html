@@ -1,0 +1,36 @@
+<template>
+  <div class="slds-m-top_medium slds-m-bottom_x-large">
+
+    <h2 class="slds-text-heading_small slds-m-bottom_medium">
+      Buttons with custom <code>onclick</code> handlers.
+    </h2>
+
+    <div class="slds-card">
+      <div class="slds-m-around_medium">
+
+        <p class="slds-text-heading_x-small slds-m-bottom_medium">
+          This button's handler toggles the icon used on the button and visibility of a content block. </p>
+
+        <!-- Toggle visibility of a content block when clicked -->
+        <!--<input type="text" class="slds-input" style="max-width: 400px;" value={textvalue}/>-->
+
+        <lightning-input type="search" label="Search" name="search" value={textvalue}></lightning-input>
+
+        <!--<lightning-button label={toggleButtonLabel} title="Toggle content action" icon-name={toggleIconName}
+          onclick={handleToggleClick}>
+        </lightning-button>-->
+        <lightning-button label="Open Confirmation" slot="actions" onclick={handleClick} name="openConfirmation">
+        </lightning-button>
+
+        <c-popup title='Confirmation Title' message='Do you want to proceed?' confirm-label='Yes' cancel-label='No'
+          visible={isDialogVisible} original-message={originalMessage} name="confirmModal" onclick={handleClick}>
+        </c-popup>
+
+      </div>
+      <div class="slds-m-vertical_large slds-m-around_medium lgc-id_content-toggle">
+        <c-basictable></c-basictable>
+      </div>
+    </div>
+
+  </div>
+</template>
