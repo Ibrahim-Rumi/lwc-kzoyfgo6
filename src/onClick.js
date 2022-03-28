@@ -4,7 +4,7 @@ export default class ButtonOnclick extends LightningElement {
     toggleIconName = 'utility:preview';
     toggleButtonLabel = 'Hide content';
     isDialogVisible = false;
-    originalMessage;
+    originalMessage; 
     displayMessage = 'Click on the \'Open Confirmation\' button to test the dialog.';
     textvalue= 'random';
     // Handles click on the 'Show/hide content' button
@@ -50,5 +50,9 @@ export default class ButtonOnclick extends LightningElement {
             //hides the component
             this.isDialogVisible = false;
         }
+  }
+
+  search(event){
+
   }
 }

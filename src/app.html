@@ -2,6 +2,10 @@
 	<div class="app slds-p-around_x-large">
 		<h1 class="slds-text-heading_large">{title}</h1>
 
+		<template>
+			<lightning-map map-markers={mapMarkers} options={mapOptions}></lightning-map>
+		</template>
+
 		<!-- Using an if statement -->
 		<template if:true={showFeatures}>
 			<div class="slds-p-top_large">
@@ -15,6 +19,8 @@
 
 
 		</template>
+
+
 
 		<h2 class="slds-text-heading_medium slds-p-top_large">Resources</h2>
 		<a href="https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.get_started_introduction">
