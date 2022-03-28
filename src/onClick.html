@@ -14,7 +14,8 @@
         <!-- Toggle visibility of a content block when clicked -->
         <!--<input type="text" class="slds-input" style="max-width: 400px;" value={textvalue}/>-->
 
-        <lightning-input type="search" label="Search" name="search" value={textvalue}></lightning-input>
+        <lightning-input type="search" label="Search" name="search" value={textvalue} onchange={search}>
+        </lightning-input>
 
         <!--<lightning-button label={toggleButtonLabel} title="Toggle content action" icon-name={toggleIconName}
           onclick={handleToggleClick}>

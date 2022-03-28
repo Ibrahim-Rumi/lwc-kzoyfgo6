@@ -1,6 +1,8 @@
 <template>
   <div style="height: 300px;">
-    <lightning-datatable key-field="id" data={data} columns={columns}>
+    <lightning-input type="search" label="Search" name="search" value={textvalue} onchange={search}>
+    </lightning-input>
+    <lightning-datatable key-field="id" data={searchable} columns={columns}>
     </lightning-datatable>
   </div>
 </template>
